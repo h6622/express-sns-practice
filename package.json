@@ -1,0 +1,15 @@
+{
+  "name": "express-sns-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/h662/express-sns-practice.git",
+  "author": "h662 <godh662@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.3"
+  }
+}
