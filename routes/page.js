@@ -22,12 +22,12 @@ router.get("/", (req, res, next) => {
       model: User,
       attributes: ["id", "nick"]
     },
-    order: [["createAt", "DESC"]]
+    order: [["createdAt", "DESC"]]
   })
-    .then(post => {
+    .then(posts => {
       res.render("main", {
         title: "sns",
-        twits: [],
+        twits: posts,
         user: req.user,
         loginError: req.flash("loginError")
       });
